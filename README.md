@@ -257,7 +257,7 @@ How Do I Run This Locally?
 - Run `nvm use` in your Terminal to switch to the proper Node/NPM version
 - Once you are on specified Node version, run `npm install`
 - Install the Grunt CLI: `npm install grunt-cli -g`
-- Type `grunt dev` to launch browser window with Examples page
+- Type `grunt dev` or `./node_modules/grunt-cli/bin/grunt dev` to launch browser window with Examples page
 
 Grunt Tasks
 ======
