@@ -4,6 +4,7 @@ module.exports = function(grunt) {
   var packageJSON = grunt.file.readJSON('package.json');
   var bumpFiles = ["package.json", "bower.json", "composer.json"];
   var commitFiles = bumpFiles.concat(["./dist/*"]);
+  const sass = require('sass');
 
   // Project configuration.
   grunt.initConfig({
@@ -215,6 +216,7 @@ module.exports = function(grunt) {
     sass: {
       development: {
         options: {
+          implementation: sass,
           sourceMap: true,
           outputStyle: 'expanded'
         },
