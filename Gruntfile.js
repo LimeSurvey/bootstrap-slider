@@ -226,6 +226,7 @@ module.exports = function(grunt) {
       },
       production: {
         options: {
+          implementation: sass,
           sourceMap: true,
           outputStyle: 'expanded'
         },
@@ -235,6 +236,7 @@ module.exports = function(grunt) {
       },
       "production-min": {
         options: {
+          implementation: sass,
           sourceMap: true,
           outputStyle: 'compressed'
         },
