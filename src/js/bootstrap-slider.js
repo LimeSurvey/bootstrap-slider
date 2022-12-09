@@ -562,7 +562,7 @@ const windowIsDefined = (typeof window === "object");
 
 				const createAndAppendTooltipSubElements = function(tooltipElem) {
 					var arrow = document.createElement("div");
-					arrow.className = "arrow";
+					arrow.className = "tooltip-arrow";
 
 					var inner = document.createElement("div");
 					inner.className = "tooltip-inner";
@@ -574,17 +574,17 @@ const windowIsDefined = (typeof window === "object");
 				/* Create tooltip elements */
 				const sliderTooltip = document.createElement("div");
 				sliderTooltip.className = "tooltip tooltip-main";
-				sliderTooltip.setAttribute('role', 'presentation');
+				sliderTooltip.setAttribute('role', 'tooltip');
 				createAndAppendTooltipSubElements(sliderTooltip);
 
 				const sliderTooltipMin = document.createElement("div");
 				sliderTooltipMin.className = "tooltip tooltip-min";
-				sliderTooltipMin.setAttribute('role', 'presentation');
+				sliderTooltipMin.setAttribute('role', 'tooltip');
 				createAndAppendTooltipSubElements(sliderTooltipMin);
 
 				const sliderTooltipMax = document.createElement("div");
 				sliderTooltipMax.className = "tooltip tooltip-max";
-				sliderTooltipMax.setAttribute('role', 'presentation');
+				sliderTooltipMax.setAttribute('role', 'tooltip');
 				createAndAppendTooltipSubElements(sliderTooltipMax);
 
 				/* Append components to sliderElem */

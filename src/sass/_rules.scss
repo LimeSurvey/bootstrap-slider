@@ -140,6 +140,7 @@
   }
   .bs-tooltip-top,
   .bs-tooltip-bottom {
+    position: relative;
     .tooltip-inner {
       position: relative;
       left: -50%;
@@ -158,7 +159,8 @@
 
     &.bs-tooltip-top,
     &.bs-tooltip-bottom {
-      .arrow {
+      .tooltip-arrow {
+        position: absolute;
         left: -.4rem;  // $tooltip-arrow-width / 2.
       }
     }
@@ -171,7 +173,8 @@
     &.bs-tooltip-left,
     &.bs-tooltip-right {
       margin-top: -14px;
-      .arrow {
+      .tooltip-arrow {
+        position: absolute;
         top: 8px;
       }
     }
