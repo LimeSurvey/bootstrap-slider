@@ -418,12 +418,12 @@ const windowIsDefined = (typeof window === "object");
 			*/
 			if(this.options.orientation === "vertical" && (this.options.tooltip_position === "top" || this.options.tooltip_position === "bottom")) {
 				if(this.options.rtl) {
-					this.options.tooltip_position = "left";
+					this.options.tooltip_position = "start";
 				}else{
-					this.options.tooltip_position = "right";
+					this.options.tooltip_position = "end";
 				}
 			}
-			else if(this.options.orientation === "horizontal" && (this.options.tooltip_position === "left" || this.options.tooltip_position === "right")) {
+			else if(this.options.orientation === "horizontal" && (this.options.tooltip_position === "start" || this.options.tooltip_position === "end")) {
 
 				this.options.tooltip_position = "top";
 
@@ -666,12 +666,12 @@ const windowIsDefined = (typeof window === "object");
 
 				// Undo inline styles and classes on tooltips
 				[this.tooltip, this.tooltip_min, this.tooltip_max].forEach(function(tooltip) {
-					this._removeProperty(tooltip, 'bs-tooltip-left');
-					this._removeProperty(tooltip, 'bs-tooltip-right');
+					this._removeProperty(tooltip, 'bs-tooltip-start');
+					this._removeProperty(tooltip, 'bs-tooltip-end');
 					this._removeProperty(tooltip, 'bs-tooltip-top');
 
-					this._removeClass(tooltip, 'bs-tooltip-right');
-					this._removeClass(tooltip, 'bs-tooltip-left');
+					this._removeClass(tooltip, 'bs-tooltip-end');
+					this._removeClass(tooltip, 'bs-tooltip-start');
 					this._removeClass(tooltip, 'bs-tooltip-top');
 				}, this);
 			}
@@ -2038,12 +2038,12 @@ const windowIsDefined = (typeof window === "object");
 						tooltipPos = this.options.tooltip_position;
 					} else {
 						if(this.options.rtl) {
-							tooltipPos = 'left';
+							tooltipPos = 'start';
 						} else {
-							tooltipPos = 'right';
+							tooltipPos = 'end';
 						}
 					}
-					var oppositeSide = (tooltipPos === 'left') ? 'right' : 'left';
+					var oppositeSide = (tooltipPos === 'start') ? 'end' : 'start';
 					tooltips.forEach(function(tooltip){
 						this._addClass(tooltip, 'bs-tooltip-' + tooltipPos);
 						tooltip.style[oppositeSide] = '100%';

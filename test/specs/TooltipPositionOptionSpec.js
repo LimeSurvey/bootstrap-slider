@@ -24,7 +24,7 @@ describe("'tooltip_position' Option tests", function() {
         min: 0,
         max: 10,
         value: 5,
-        tooltip_position: "left",
+        tooltip_position: "start",
         orientation: "vertical"
       });
 
@@ -42,7 +42,7 @@ describe("'tooltip_position' Option tests", function() {
         min: 0,
         max: 10,
         value: 5,
-        tooltip_position: "right",
+        tooltip_position: "end",
         orientation: "vertical"
       });
 
@@ -159,7 +159,7 @@ describe("'tooltip_position' Option tests", function() {
         min: 0,
         max: 10,
         value: 5,
-        tooltip_position: "left",
+        tooltip_position: "start",
         orientation: "horizontal"
       });
 
@@ -177,7 +177,7 @@ describe("'tooltip_position' Option tests", function() {
         min: 0,
         max: 10,
         value: 5,
-        tooltip_position: "right",
+        tooltip_position: "end",
         orientation: "horizontal"
       });
 

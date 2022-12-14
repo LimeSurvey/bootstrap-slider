@@ -922,7 +922,7 @@ $("#ex17b").slider({
 	max: 10,
 	value: 0,
 	orientation: 'vertical',
-	tooltip_position:'left'
+	tooltip_position:'start'
 });
 
 // Without JQuery
@@ -938,7 +938,7 @@ var sliderB = new Slider("#ex17b", {
 	max: 10,
 	value: 0,
 	orientation: 'vertical',
-	tooltip_position:'left'
+	tooltip_position:'start'
 });
 </code></pre>
 
@@ -1332,7 +1332,6 @@ slider.refresh({ useCurrentValue: true });
     <script>hljs.initHighlightingOnLoad();</script>
     <script>
     	$(document).ready(function() {
-            $('.tooltip').tooltip();
 
     		/* Example 1 */
 	    	$('#ex1').slider({
@@ -1481,7 +1480,7 @@ slider.refresh({ useCurrentValue: true });
 				max  : 10,
 				value: 0,
 				orientation: 'vertical',
-				tooltip_position:'left'
+				tooltip_position:'start'
 			});
 
 			/* Example 18 */

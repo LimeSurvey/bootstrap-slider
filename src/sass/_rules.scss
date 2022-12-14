@@ -65,6 +65,12 @@
   &.slider-vertical {
     height: $slider-vertical-height;
     width: $slider-line-height;
+    .bs-tooltip-start{
+      right: 100%;
+    }
+    .bs-tooltip-end{
+      left: 100%;
+    }
     .slider-track {
       width: $slider-line-height/2;
       height: 100%;
@@ -140,14 +146,13 @@
   }
   .bs-tooltip-top,
   .bs-tooltip-bottom {
-    position: relative;
     .tooltip-inner {
       position: relative;
       left: -50%;
     }
   }
-  &.bs-tooltip-left,
-  &.bs-tooltip-right {
+  &.bs-tooltip-start,
+  &.bs-tooltip-end {
     .tooltip-inner {
       position: relative;
       top: -100%;
@@ -170,8 +175,8 @@
     &.bs-tooltip-bottom {
       margin-top: 2px;
     }
-    &.bs-tooltip-left,
-    &.bs-tooltip-right {
+    &.bs-tooltip-start,
+    &.bs-tooltip-end {
       margin-top: -14px;
       .tooltip-arrow {
         position: absolute;
